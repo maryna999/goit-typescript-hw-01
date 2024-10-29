@@ -1,11 +1,15 @@
+interface Address {
+  city: string;
+  country: string;
+}
 interface User {
   name: string;
   age: number;
   email: string;
-  address?: object;
+  address?: Address;
 }
 
-const mango = {
+const mango: User = {
   name: "Mango",
   age: 30,
   email: "john@example.com",
@@ -15,8 +19,8 @@ const mango = {
   },
 };
 
-const poly = {
-  name: "Mango",
+const poly: User = {
+  name: "Poly",
   age: 30,
   email: "john@example.com",
 };
